@@ -1,0 +1,493 @@
+/*Кефрейм поворот по часовой стрелке на 360 градусов*/
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*Свойства шапки сайта и ее элементов*/
+.header {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    background-color: #F2F2F2;
+    position: relative;
+    overflow: hidden; 
+}
+
+.header__logo {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    height: 32px;
+    width: 183px;
+    z-index: 1;
+}
+
+.header__title{
+    position: absolute;
+    display: flex;
+    left: 64px;
+    width: 730px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 1;
+    top: 25vh;
+}
+
+.header__subtitle{
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+    width: 388px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 1;  
+}
+
+.learn{
+    color: #2F80ED;
+    text-decoration: none;
+}
+
+.header__main-illustration{
+    height: 608px;
+    width: 765px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header__square-pic{
+    width: 568px;
+    height: 568px;    
+    background-color: #2F80ED;
+    position: absolute;
+    right: 0px;
+    top: 64px;
+    /*поворачивает фигуру на 15 градусов против часовой стрелки*/
+    transform: rotate(-15deg);
+    /*Создает анимацию: поворот с равномерной скоростью за 20 секунд бесконечно*/
+    animation: rotation 20s infinite linear;
+}
+
+/*Задает свойства заголовков секций для всего контента*/
+.section__title{
+    width: 60%;
+    margin: auto;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;  
+    text-align: center;
+}
+
+/*Задает свойства подзаголовков секций для всего контента*/
+.section__subtitle{
+    width: 60%;
+    margin: 20px auto 0px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*Свойства секции descriptions*/
+.description{
+    padding-top: 100px;
+}
+
+.twocolumns{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.twocolumns_brief{
+    width: 175px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2F80ED;
+    text-decoration: none;   
+}
+
+.twocolumns_main-text{
+    width: 80%;
+    min-width: 784px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.span-bold{
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.two-columns__paragraph{
+    width: 80%;
+    min-width: 784px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/*Свойства секции technics*/
+.technics{
+    padding-top: 100px;
+}
+
+.technics__cards{
+    width: 920px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technics__cards_item{
+    width: 240px;
+    margin: 60px auto 0px;
+}
+
+
+.image-item{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin: 0 40px 43px 40px;
+}
+
+.title-item{
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-item{
+    margin-top: 16px;
+    margin-bottom: 0; 
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*Свойства секции video*/
+.video{
+    padding-top: 100px;
+}
+
+.iframes{
+    margin: 50px auto 0;
+    display: flex;
+    width: 1050px;
+    justify-content: space-between;
+}
+
+.iframe{
+    height: 316px;
+    width: 515px;
+    border: 0;    
+}
+
+/*Свойства секции oakley*/
+.oakley{
+    padding-top: 160px;
+    padding-bottom: 80px;
+    background-color: #F2F2F2;
+    margin: -60px;
+}
+
+/*Свойства секции feinman*/
+.feinman{
+    height: 790px;
+    padding: 100px 0px 0px;
+    background-color: #F2F2F2;    
+    background-image: url(../images/feinman.png);
+    background-size: 867px 637px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.feinman__title{
+    width: 648px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    
+}
+
+.feinman__subtitle{
+    text-align: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;  
+}
+.feinman__link{
+    position: absolute;
+    right: 0;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 48px; 
+}
+ 
+/*Свойства секции digits*/
+.digits{
+    margin-top:100px;
+    margin-bottom: 100px;
+    padding: 100px auto 100px;
+}
+
+.digits__table{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.digits__table_cell{
+    width: 250px;
+    margin: 60px auto 0px;
+}
+
+.digits__table_heading{
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.digits__table_text p{
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 20px 0px;
+}
+
+/*Свойства секции khan*/
+.khan{
+    padding-top: 105px;
+    background-color: #F2F2F2;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.author{
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.title{
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.quote{
+    width: 790px;
+    margin-top: 50px;
+    margin-bottom: 36px; 
+    display: flex;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.quote-author-subline{
+    margin-top: 10px;
+    margin-bottom: 68px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.book-container{
+    display: flex;
+}
+
+.book-pic{
+    display: block;
+    height: 620px;
+    width: 608px;
+    margin-right: 20px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buy-link{
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/*Свойства секции kaufman*/
+.kaufman{
+    background-color: #1F1F1F;
+    padding: 90px 0px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.kaufman__title{
+    color: #FFFF;
+    width: 648px;
+    margin: auto;
+    text-align: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.kaufman__subtitle{
+    color: #FFFF;
+    margin: 20px auto 0px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.kaufman p{
+    color: white;
+}
+
+.kaufman__table_white{
+    width: 1100px;
+    display: flex;
+    margin: 0px auto 90px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cell_white{
+    width: 200px;
+    margin: 80px auto 0px;
+    z-index: 2;
+}
+
+.text_white{
+    margin: 20px 0px 0px 0px;
+}
+
+.kaufman__triangle{
+    position: absolute;
+    top: 0px;
+    right: -210px;
+    background-size: 877px 877px; 
+    z-index: 1;
+    /*Создает анимацию: поворот с равномерной скоростью за 20 секунд бесконечно*/
+    animation: rotation 20s infinite linear;
+} 
+
+/*Свойства секции resources*/
+.resourses{
+   padding-top: 100px;
+}
+
+.logo-zone{
+    width: 1100px;
+    margin: 80px auto 217px;
+    display: flex;
+}
+
+.logo{
+    height: 38px;
+    width: 270px;
+}
+
+/*Свойства подвала сайта*/
+.footer{
+    min-height: 350px;
+    background-color: #1F1F1F;
+    padding: 60px 0px 40px;
+    color: #FFFF;
+    box-sizing: border-box;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.column__copyright{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 711px;
+}
+
+.footer__logo{
+    width: 183px;
+    height: 35px;
+    margin: top left;
+}
+
+.footer__author{
+    margin-bottom: 18px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.column-heading{
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.column-linls{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.column-linls__soc{
+    display: block;
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.column-linls img{
+    margin-right: 16px;
+}
+
+/*плавно делает все ссылки на странице принаведении мыши немного прозрачными*/
+.page a{
+    opacity: 1;
+    transition-property: opacity 3s linear;
+}
+
+.page a:hover{
+    opacity: 0.7;
+}
